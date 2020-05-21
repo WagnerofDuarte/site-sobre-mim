@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a id="mainSlogan" class="navbar-brand" href="index.html"><span class="font-weight-bold text-uppercase">Wagner
+                Duarte</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-start container-fluid px-0">
+                <li class="nav-item pl-5">
+                    <a class="nav-link" href="about.html">Sobre Mim</a>
+                </li>
+                <li class="nav-item pl-5">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 ml-auto mr-0">
+                <img id="mainImage" src=" eu_1.JPG " class="rounded" alt="Responsive image">
+            </div>
+            <div class="col-6">
+                <p id="introText"><strong>DECLARAÇÃO DE MISSÃO PESSOAL</strong></p>
+                <p id="introText" class="mt-0">Equilíbrio, sonho em viver em equilíbrio. Saúde, amizade, escola, aprendizado, família e lazer devem estar em harmonia entre si, e praticados a partir de princípios imutáveis.</p>
+                <p id="introText" class="mt-0 ">Esses pilares de minha vida não podem, de forma alguma, ser praticados de maneiras aleatórias e mal planejadas. Devo planejar tudo que faço, com <strong>Disciplina</strong> sabendo das prioridades, exceções e qual escolha será a melhor
+                    para mim e as pessoas ao meu redor.</p>
+                <p id="introText" class="mt-0 ">Quero que meus relacionamentos pessoais sejam construídos e fortificados de forma que eu seja uma pessoa cada vez mais amada e bem vista pelas pessoas, portanto, utilizarei da <strong>Empatia</strong> e da <strong>Tolerancia</strong> para
+                    alcançar esses resultados.
+                </p>
+                <p id="introText" class="mt-0 ">A mentira é uma terrível opção para se resolver problemas, se relacionar ou alcançar objetivos na vida, acredito que a partir da <strong>Honestidade</strong> tudo pode ser resolvido a partir de bases sólidas e estáveis, evitando assim
+                    um problema muito maior no futuro.</p>
+                <p id="introText" class="mt-0 ">Ver outras pessoas felizes me faz muito bem, portanto através do <strong>Altruismo</strong>, sempre estarei disposto para ajudar os outros deixando suas vidas melhores e ricas de sorrisos, enchendo minha vida de atitudes gratificantes.</p>
+                <p id="introText" class="mt-0 ">Nenhum dos problemas, obstáculos e objetivos que surgirão em minha vida serão resolvidos sozinhos ou de forma fácil, portanto utilizarei da <strong>Perseverança</strong> para resolvê-los ou alcançá-los.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $("#mainNavbar ");
+                $nav.toggleClass("scrolled ", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js "></script>
+</body>
+
+</html>

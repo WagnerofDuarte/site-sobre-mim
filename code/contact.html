@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a id="mainSlogan" class="navbar-brand" href="index.html"><span class="font-weight-bold text-uppercase">Wagner
+                Duarte</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-start container-fluid px-0">
+                <li class="nav-item pl-5">
+                    <a class="nav-link" href="about.html">Sobre Mim</a>
+                </li>
+                <li class="nav-item pl-5">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form id="mainForm">
+            <div class="form-group ">
+                <label for="seuNome">Nome</label>
+                <input type="text" class="form-control" id="seuNome" aria-describedby="nomeContact" placeholder="Coloque seu Nome">
+            </div>
+            <div class="form-group">
+                <label for="perguntaRapida">Pergunta</label>
+                <input type="text" class="form-control" id="perguntaRapida" placeholder="Pergunta">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Vc me pagara 1000 reais</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="form-group mt-5">
+                <p class="font-weight-bold">Me adicione nas minhas redes sociais!!!</p>
+            </div>
+            <div class="form-group mt-1">
+                <a id="icons" href="https://github.com/WagnerofDuarte" class="mt-1">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a id="icons" href="https://www.instagram.com/wagner_of_duarte/" class="mt-1 ml-3">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a id="icons" href="https://www.facebook.com/wagner.oliveiraferreiraduarte" class="mt-1 ml-3">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+
+
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $("#mainNavbar ");
+                $nav.toggleClass("scrolled ", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
